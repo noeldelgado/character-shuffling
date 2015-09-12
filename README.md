@@ -62,7 +62,7 @@ You can extend this options during instantiation (second param) or when calling 
 var CS = require('character-shuffling');
 var el = document.getElementById('sample-element');
 var text = new CS(el, {
-	chars : '.?/\\(^)![]{}*&^%$#'\"',
+	chars : ".?/\\(^)![]{}*&^%$#'\"",
 	text : 'Hello World',
 	callback : function() {
 	   console.log('Hello World shuffling animation completed.');
