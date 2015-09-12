@@ -2,6 +2,8 @@
 
 [![npm-image](https://img.shields.io/npm/v/character-shuffling.svg?style=flat-square)](https://www.npmjs.com/package/character-shuffling)
 
+Vanilla (and slightly modified) version of [Martin Angelov's][1] - [jquery.shuffleLetters.js][2]
+
 ## Install
 
 **NPM**
@@ -55,7 +57,35 @@ You can extend this options during instantiation (second param) or when calling 
 }
 ```
 
+## Example Using Options
+```js
+var CS = require('character-shuffling');
+var el = document.getElementById('sample-element');
+var text = new CS(el, {
+	chars : '.?/\\(^)![]{}*&^%$#'\"',
+	text : 'Hello World',
+	callback : function() {
+	   console.log('Hello World shuffling animation completed.');
+	}
+});
+text.shuffle();
+
+...
+// later on
+text.shuffle({
+	chars : '0123456789',
+	text : 'I like numbers...',
+	times : 20,
+	callback : function() {
+	   console.log(this.get('text'));
+	   => 'I like numbers...'
+	}
+});
+```
+
 ## License
 MIT © [Noel Delgado][0]
 
 [0]: http://pixelia.me/
+[1]: http://martinangelov.com/
+[2]: http://tutorialzine.com/2011/09/shuffle-letters-effect-jquery/
