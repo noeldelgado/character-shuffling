@@ -1,0 +1,28 @@
+{
+  "name": "character-shuffling",
+  "version": "1.0.0",
+  "description": "Shuffle the text content of DOM elements, whether to its original charater data or to new specific string values.",
+  "author": "Noel Delgado <auhcsei@gmail.com> (http://pixelia.me)",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/noeldelgado/character-shuffling.git"
+  },
+  "homepage": "https://github.com/noeldelgado/character-shuffling",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords" : [
+    "shuffle",
+    "shuffling",
+    "character",
+    "letters",
+    "words",
+    "animation",
+    "text",
+    "DOM",
+    "random",
+    "textContent"
+  ]
+}
