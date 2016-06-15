@@ -1,6 +1,6 @@
 # character-shuffling
 
-[![npm-image](https://img.shields.io/npm/v/character-shuffling.svg?style=flat-square)](https://www.npmjs.com/package/character-shuffling)
+[![npm-image](https://img.shields.io/npm/v/character-shuffling.svg)](https://www.npmjs.com/package/character-shuffling)
 
 Vanilla (and slightly modified) version of [Martin Angelov's][1] - [jquery.shuffleLetters.js][2]
 
@@ -32,25 +32,25 @@ You can extend this options during instantiation (second param) or when calling 
 
 ```js
 {
-	/* The characters to use when selecting characters randomly. 
+	/* The characters to use when selecting characters randomly.
 	 * [String]
 	 */
 	chars : "abcdefghijklmnopqrstuvwxyz" +
 			"ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
 			"0123456789" +
 			",.?/\\(^)![]{}*&^%$#'\"",
-			
-	/* How many times should the letters be changed. 
+
+	/* How many times should the letters be changed.
 	 * [Number]
 	 */
 	times : 10,
-	
-	/* String to shuffle to 
+
+	/* String to shuffle to
 	 * [String]
 	 */
 	text : this.element.textContent,
-	
-	/* Function to be call once the shuffling is complete. 
+
+	/* Function to be call once the shuffling is complete.
 	 * [Function]
 	 */
 	callback : null
